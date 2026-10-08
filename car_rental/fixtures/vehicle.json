@@ -1,0 +1,44 @@
+[
+ {
+  "daily_rate": 2200.0,
+  "docstatus": 0,
+  "doctype": "Vehicle",
+  "make": "Hyundai",
+  "model": "Creta",
+  "modified": "2026-10-07 09:55:13.722914",
+  "name": "VEH-002",
+  "registration_no": "TN02CD5678",
+  "security_deposit": 8000.0,
+  "status": "Available",
+  "vehicle_code": "VEH-002",
+  "vehicle_type": "SUV"
+ },
+ {
+  "daily_rate": 1800.0,
+  "docstatus": 0,
+  "doctype": "Vehicle",
+  "make": "Honda",
+  "model": "City",
+  "modified": "2026-10-07 09:55:13.730972",
+  "name": "VEH-003",
+  "registration_no": "TN03EF9012",
+  "security_deposit": 7000.0,
+  "status": "Available",
+  "vehicle_code": "VEH-003",
+  "vehicle_type": "Sedan"
+ },
+ {
+  "daily_rate": 2500.0,
+  "docstatus": 0,
+  "doctype": "Vehicle",
+  "make": "Toyota",
+  "model": "Innova",
+  "modified": "2026-10-07 09:55:13.656874",
+  "name": "VEH-001",
+  "registration_no": "TN01AB1234",
+  "security_deposit": 10000.0,
+  "status": "Available",
+  "vehicle_code": "VEH-001",
+  "vehicle_type": "SUV"
+ }
+]
