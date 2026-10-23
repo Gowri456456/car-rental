@@ -1,0 +1,35 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.status==\"Confirmed\"",
+ "condition_type": "Python",
+ "creation": "2026-10-20 16:53:36.480980",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Rental Booking",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Add your message here</p>\n",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2026-10-20 16:56:34.372414",
+ "modified_by": "Administrator",
+ "module": "Car Rental",
+ "name": "Car Rental",
+ "notification_message": "Your car rental booking {{ doc.customers}} has been submitted successfully.\nPickup Date: {{ doc.pickup_date }}\nReturn Date: {{ doc.return_date }}\nRental Amount: {{ doc.rental_amount }}",
+ "notification_title": "New Car Rental Booking: {{ doc.customers}}",
+ "notification_type": "Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Administrator"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0
+}

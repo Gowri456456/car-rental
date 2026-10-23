@@ -2,29 +2,28 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_guest_to_view": 1,
- "allow_import": 1,
  "allow_rename": 1,
- "autoname": "BOOK-.###",
- "creation": "2026-10-07 09:56:43.066946",
+ "autoname": "BOOKID-CAR-.###",
+ "creation": "2026-10-20 10:04:46.769453",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_gdgt",
-  "amended_from",
-  "booking_id",
-  "customer",
-  "vehicle",
+  "section_break_smsa",
+  "customers",
+  "vehicles",
   "pickup_date",
   "return_date",
   "rental_days",
   "daily_rate",
   "rental_amount",
   "status",
+  "booking_source",
+  "amended_from",
   "route"
  ],
  "fields": [
   {
-   "fieldname": "section_break_gdgt",
+   "fieldname": "section_break_smsa",
    "fieldtype": "Section Break"
   },
   {
@@ -38,26 +37,19 @@
    "search_index": 1
   },
   {
-   "fieldname": "booking_id",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Booking ID",
-   "unique": 1
-  },
-  {
-   "fieldname": "customer",
+   "fieldname": "customers",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Customer",
-   "options": "Customer",
+   "label": "Customers",
+   "options": "Customers",
    "reqd": 1
   },
   {
-   "fieldname": "vehicle",
+   "fieldname": "vehicles",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Vehicle",
-   "options": "Vehicle",
+   "label": "Vehicles",
+   "options": "Vehicles",
    "reqd": 1
   },
   {
@@ -79,23 +71,32 @@
    "reqd": 1
   },
   {
-   "fieldname": "daily_rate",
-   "fieldtype": "Currency",
-   "in_list_view": 1,
-   "label": "Daily Rate",
-   "reqd": 1
-  },
-  {
    "fieldname": "rental_amount",
    "fieldtype": "Currency",
-   "label": "Rental Amount"
+   "in_list_view": 1,
+   "label": "Rental Amount",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Pending\nConfirmed\nCancelled",
+   "options": "Draft\nConfirmed\nCancelled\nCompleted"
+  },
+  {
+   "fieldname": "daily_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Daily Rate",
+   "non_negative": 1,
    "reqd": 1
+  },
+  {
+   "fieldname": "booking_source",
+   "fieldtype": "Select",
+   "label": "Booking Source",
+   "options": "Manual\nOnline\nPhone\nWalk-in"
   },
   {
    "fieldname": "route",
@@ -106,10 +107,9 @@
  ],
  "grid_page_length": 50,
  "has_web_view": 1,
- "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-10-08 10:04:03.865680",
+ "modified": "2026-10-22 10:12:34.673476",
  "modified_by": "Administrator",
  "module": "Car Rental",
  "name": "Rental Booking",
